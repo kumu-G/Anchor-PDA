@@ -1,0 +1,18 @@
+[features]
+seeds = false
+skip-lint = false
+
+
+[programs.localnet]
+jcy = "Do5nLpW22qmyESxY4RKM6a6ijpSW3WrVCey2WujF4K2"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "./id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+client = "yarn run ts-node client/*.ts"
